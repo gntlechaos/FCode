@@ -7,8 +7,19 @@ The idea behind this project is to experiment with different ways by which data 
 ## How it works
 The basic premise of this program is that the Unicode [Basic Latin](https://www.ssec.wisc.edu/~tomw/java/unicode.html#x0000) + [Latin-1-Supplement](https://www.ssec.wisc.edu/~tomw/java/unicode.html#x0080) characters can be represented by the decimal range of 0 - 255, and so are the RGBA colours of the pixels in a PNG image. So basically we encode each character to one of the RGBA channels of a pixel at a time. So an **X** by **Y** pixels image can store up to ```4*(X*Y)``` characters.
 
-![alt text](https://github.com/gntlechaos/FCode/blob/master/ProjectImages/scheme.png?raw=true)
+![The image shows how eight characters are encoded in the RGBA colors of two pixels](https://github.com/gntlechaos/FCode/blob/master/ProjectImages/scheme.png?raw=true)
 
 Based on that premise, the characters are encoded in the following order: first all red values in all pixels, then all green values and so on. All the values that aren't used to store any data are set to 255, but this can be changed by altering the ```final int nullCharCode = 255;``` variable in the FCode class.
 
-![alt text](https://github.com/gntlechaos/FCode/blob/master/ProjectImages/scheme2.png?raw=true)
+![The image shows how a 36 characters text can be stored in a 3 by 3 pixels image ](https://github.com/gntlechaos/FCode/blob/master/ProjectImages/scheme2.png?raw=true)
+
+## How it looks (screenshots)
+
+### Startup Window
+![Startup Window](https://github.com/gntlechaos/FCode/blob/master/ProjectImages/Screenshot%202.png?raw=true)
+
+### Encoding Text
+![Encode Text](https://github.com/gntlechaos/FCode/blob/master/ProjectImages/Screenshot%203.png?raw=true)
+
+### Decoding Image
+![Decode Image](https://github.com/gntlechaos/FCode/blob/master/ProjectImages/Screenshot%201.png?raw=true)
