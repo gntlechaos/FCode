@@ -19,7 +19,7 @@ Based on that premise, the characters are encoded in the following order: first 
 ![Startup Window](https://github.com/gntlechaos/FCode/blob/master/ProjectImages/Screenshot%202.png?raw=true)
 
 ### Encoding Text
-![Encode Text](https://github.com/gntlechaos/FCode/blob/master/ProjectImages/Screenshot%203.png?raw=true)
+![Encode Text](https://github.com/gntlechaos/FCode/blob/master/ProjectImages/Screenshot%203%20updated.png?raw=true)
 
 ### Decoding Image
 ![Decode Image](https://github.com/gntlechaos/FCode/blob/master/ProjectImages/Screenshot%201.png?raw=true)
