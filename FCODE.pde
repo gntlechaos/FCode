@@ -79,7 +79,12 @@ public PImage encode(String text)
     imageSize = minImageSize;
   } else 
   {
-    imageSize = nextPerfectSquareSide(ceil(textLength/4));
+    
+    if(IsPerfectSquare(ceil(textLength/ (float)4))){
+      imageSize = (int)sqrt(ceil(textLength/ (float)4));
+    } else {
+    imageSize = nextPerfectSquareSide(ceil(textLength/ (float)4));
+    }
   }
   PImage imageLocal = createImage(imageSize,imageSize,ARGB);
   
