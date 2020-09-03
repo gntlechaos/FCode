@@ -129,7 +129,14 @@ void mouseWheel(MouseEvent event)
 
 int nextPerfectSquareSide(int N) 
 { 
+  
   int nextN = (int)Math.floor(Math.sqrt(N)) + 1; 
 
   return nextN; 
 } 
+
+boolean IsPerfectSquare(int input)
+{
+    int closestRoot = (int) sqrt(input);
+    return input == closestRoot * closestRoot;
+}
